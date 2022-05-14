@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-inmobiliary-dev-63922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::359588799079:role/amplify-inmobiliary-dev-63922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::359588799079:role/amplify-inmobiliary-dev-63922-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-inmobiliary-dev-63922-deployment",
+      "UnauthRoleName": "amplify-inmobiliary-dev-63922-unauthRole",
+      "StackName": "amplify-inmobiliary-dev-63922",
+      "StackId": "arn:aws:cloudformation:us-east-1:359588799079:stack/amplify-inmobiliary-dev-63922/56914c90-d2b1-11ec-a634-0aa1b5993139",
+      "AmplifyAppId": "d7lpvlgdew2ft"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "typeName": "Mutation",
+  "fieldName": "CreateRegion",
+  "arguments": {
+    "input": {
+      "name": "Chapinero",
+      "boundingBox": {
+        "bottomLeft": {
+          "longitude": -74.069225,
+          "latitude": 4.621519
+        },
+        "upperRight": {
+          "longitude": -74.024078,
+          "latitude": 4.681916
+        }
+      }
+    }
+  },
+  "identity": {
+    "claims": {
+      "sub": "1c77ca40-339d-495b-968d-e7b5cea074e1",
+      "cognito:groups": ["Admin"],
+      "email_verified": true,
+      "custom:schedule": "{\"in\":\"l-v 8-6\",\"out\":\"s-s\"}",
+      "iss": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_4SGSexzDG",
+      "cognito:username": "jose.ceron",
+      "origin_jti": "2bb69b67-b166-4076-9660-bb085e06c12a",
+      "aud": "57t4sj4uolmb4asi9obopaqgod",
+      "custom:stores": "qaolimpicaswl1",
+      "event_id": "6f2d7594-1b6a-4613-80d8-ba5a31f25091",
+      "token_use": "id",
+      "custom:vtexId": "4-c9b498bd-c67f-4966-81aa-47ee7d77d29d",
+      "auth_time": 1627650952,
+      "exp": 1627694152,
+      "iat": 1627650952,
+      "jti": "abae892a-94f3-4b52-a504-3308304d71d4",
+      "email": "jose.ceron@softwareestrategico.co"
+    },
+    "defaultAuthStrategy": "ALLOW",
+    "groups": ["Admin"],
+    "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_4SGSexzDG",
+    "sourceIp": ["177.254.177.210"],
+    "sub": "1c77ca40-339d-495b-968d-e7b5cea074e1",
+    "username": "jose.ceron"
+  },
+  "source": null,
+  "request": {
+    "headers": {
+      "x-forwarded-for": "177.254.177.210, 64.252.186.70",
+      "accept-encoding": "gzip, deflate",
+      "cloudfront-is-tablet-viewer": "false",
+      "cloudfront-viewer-country": "CO",
+      "x-amzn-requestid": "f6ffb753-a75e-47e3-b51f-50c92e018412",
+      "via": "2.0 18572e89ca99b00275cf6291940e9691.cloudfront.net (CloudFront)",
+      "origin": "null",
+      "cloudfront-forwarded-proto": "https",
+      "content-type": "application/json",
+      "x-amzn-trace-id": "Root=1-61049001-5db452a211ea7cd1257cb842",
+      "x-amz-cf-id": "fp0PSezrVgyrTMQtADGQWpa1TJ72guy8W0OG0qj5FPbXbsCATVhTIA==",
+      "authorization": "eyJraWQiOiIyeHFsXC9QU21FcUpVeDl0eGFpOGo5djFPd3FLOGtsZFJKWGRNcTczZGQwWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxYzc3Y2E0MC0zMzlkLTQ5NWItOTY4ZC1lN2I1Y2VhMDc0ZTEiLCJjb2duaXRvOmdyb3VwcyI6WyJBZG1pbiJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiY3VzdG9tOnNjaGVkdWxlIjoie1wiaW5cIjpcImwtdiA4LTZcIixcIm91dFwiOlwicy1zXCJ9IiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfNFNHU2V4ekRHIiwiY29nbml0bzp1c2VybmFtZSI6Impvc2UuY2Vyb24iLCJvcmlnaW5fanRpIjoiMmJiNjliNjctYjE2Ni00MDc2LTk2NjAtYmIwODVlMDZjMTJhIiwiYXVkIjoiNTd0NHNqNHVvbG1iNGFzaTlvYm9wYXFnb2QiLCJjdXN0b206c3RvcmVzIjoicWFvbGltcGljYXN3bDEiLCJldmVudF9pZCI6IjZmMmQ3NTk0LTFiNmEtNDYxMy04MGQ4LWJhNWEzMWYyNTA5MSIsInRva2VuX3VzZSI6ImlkIiwiY3VzdG9tOnZ0ZXhJZCI6IjQtYzliNDk4YmQtYzY3Zi00OTY2LTgxYWEtNDdlZTdkNzdkMjlkIiwiYXV0aF90aW1lIjoxNjI3NjUwOTUyLCJleHAiOjE2Mjc2OTQxNTIsImlhdCI6MTYyNzY1MDk1MiwianRpIjoiYWJhZTg5MmEtOTRmMy00YjUyLWE1MDQtMzMwODMwNGQ3MWQ0IiwiZW1haWwiOiJqb3NlLmNlcm9uQHNvZnR3YXJlZXN0cmF0ZWdpY28uY28ifQ.PLHHF-GE7DUrnxR3VBRC_hfHjbI80U8-G10IBRUQuME2_rffOdwQOlva2ec7zGcZ42apOvulcyessW9joMHKEtOVLzvXBYJd2G_a7rdLj4fP-YkkIHljOba-4iZBfuJq08U0nn67tyaq0mWSjDVWH-cGYCdEB_jPyWvzg0llifvkREls7CCAzUm5A8_gzwK5F91_awJFRiozDIeBbMbe-D72YXVc34POhnwj0AceZFqefJ-iwP79d990mLbIYqFvM0lgwwvlwN9S64Crk_EyyOTzKc_xk8fEss7VuFjkI2RodBYPx6i4GOm7ArKroUiOzJudQKt1I_yC6k27AiUPJA",
+      "content-length": "693",
+      "x-forwarded-proto": "https",
+      "host": "ddoawidhkbfntijr3huq5kdb2i.appsync-api.us-east-1.amazonaws.com",
+      "accept-language": "en-US",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) GraphQLPlayground/1.8.10 Chrome/61.0.3163.100 Electron/2.0.11 Safari/537.36",
+      "cloudfront-is-desktop-viewer": "true",
+      "accept": "*/*",
+      "cloudfront-is-mobile-viewer": "false",
+      "x-forwarded-port": "443",
+      "cloudfront-is-smarttv-viewer": "false"
+    }
+  },
+  "prev": {
+    "result": {}
+  }
+}
