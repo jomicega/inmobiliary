@@ -1,0 +1,36 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+type Property @model @auth(rules: [{ allow: API_KEY }]) {
+      id: number! @primaryKey
+      title: string
+      description: string
+      location: CoordinatesGeographic
+      pricing: CoordinatesGeographic
+      bedrooms: number,
+      bathrooms: number,
+      area: number,
+      photos: string[],
+      createdAt:string
+      updatedAt: string
+      regions: string[]
+}
+
+type Region @model @auth(rules: [{ allow: API_KEY }]) {
+  id: number! @primaryKey
+  name: string!
+  boundingBox: BoundingBox;
+  properties: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+type BoundingBox {
+  bottomLeft: CoordinatesGeographic
+  upperRight: CoordinatesGeographic
+}
+
+type CoordinatesGeographic {
+  longitude: number
+  latitude: number
+}
